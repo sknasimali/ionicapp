@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>pickup-call</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-img src="https://i.stack.imgur.com/B6fEt.png" />
+  <ion-card>
+    <ion-card-content>
+      <p>Address: Module 305 WEBEL, Tower 2, BN 9</p>
+      <p>Complement: Sector V</p>
+      <p>Nighborhood: Bidhannagar</p>
+      <p>City: Kolkata</p>
+      <p>Zipcode: 700091</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+    <ion-item lines="insert">
+      <ion-label position="floating">Notes:</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button size="full" color="success" (click)="pickupCalls()">Create a Pickup Call</ion-button>
+</ion-content>

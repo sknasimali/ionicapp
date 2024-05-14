@@ -18,4 +18,29 @@
       </ion-label>
     </ion-item>
   </ion-list>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Last Pickup Call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-icon name="hourglass-outline" slot="start" color="warning"></ion-icon>
+        <ion-label>
+          On Hold<p>22/04/2024 16:04:00</p>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="null">
+        <ion-label>
+          <p>Created at 21/04/2024</p>
+          <p>Note: We have two bags that are full one is button one is plastic</p>
+        </ion-label>
+      </ion-item>
+      <ion-button color="success" fill="clear" size="full" (click)="pickupCalls()">See All..</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button color="success">
+      <ion-icon name="add" (click)="newpickupCalls()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
