@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>userdata</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngIf="currentData">
+    <ion-avatar slot="start">
+      <img src="{{currentData.image}}">
+    </ion-avatar>
+    <ion-label>
+      <h1>{{currentData.name}}</h1>
+      <h2>{{currentData.address}}</h2>
+      <p>{{currentData.description}}</p>
+    </ion-label>
+  </ion-item>
+</ion-content>

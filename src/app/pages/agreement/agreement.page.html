@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>agreement</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="accept()">Accept</ion-button>
+  <ion-button (click)="decline()">Decline</ion-button>
+  <ion-button [routerLink]="['/login']">Route</ion-button>
+  <ion-button (click)="getData()">Get Data</ion-button>
+</ion-content>

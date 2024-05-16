@@ -10,7 +10,7 @@
         <ion-item>
           <ion-input type="email" label="Enter User Email" labelPlacement="floating" placeholder="Email" formControlName="email"></ion-input>
         </ion-item>
-        <app-error-message [field]="form.get('email')" message="Email is required"></app-error-message>
+        <app-error-message *ngIf="form.get('email')?.touched && form.get('email')?.errors" message="Email is required">Email is required</app-error-message>
         <ion-item>
           <ion-input type="password" label="Enter User Password" labelPlacement="floating" placeholder="Password" formControlName="password"></ion-input>
         </ion-item>
