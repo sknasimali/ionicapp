@@ -8,7 +8,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class UserdataPage implements OnInit {
   currentData: any;
-  datatest: String = "Nasim";
+  datatest: String = "Test Data";
   constructor(private route:ActivatedRoute, public router: Router) {
     this.route.queryParams.subscribe(params=>{
       this.currentData = this.router.getCurrentNavigation()?.extras?.state?.['user'];

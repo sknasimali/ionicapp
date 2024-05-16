@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'userdata',
     loadChildren: () => import('./pages/userdata/userdata.module').then( m => m.UserdataPageModule)
+  },
+  {
+    path: 'child',
+    loadChildren: () => import('./pages/child/child.module').then( m => m.ChildPageModule)
   }
 ];
 

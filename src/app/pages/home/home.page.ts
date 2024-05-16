@@ -18,5 +18,8 @@ export class HomePage implements OnInit {
   newpickupCalls(){
     this.route.navigate(['pickup-call']);
   }
+  addchild(){
+    this.route.navigate(['child']);
+  }
 
 }

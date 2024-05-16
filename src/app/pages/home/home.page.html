@@ -43,4 +43,54 @@
       <ion-icon name="add" (click)="newpickupCalls()"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+  <ion-grid class="no-padding grid" ion-fixed>
+    <ion-row align-items-start class="row tap-nav">
+        <ion-col col-3>
+          <div class="tap-menu">
+            <a>
+              <div class="tap">
+                <img src="assets/icon/home/immunisations.svg">
+              </div>
+              <h4>Immunisations</h4>
+            </a>
+          </div>
+        </ion-col>
+
+        <ion-col col-3>
+          <div class="tap-menu">
+            <a>
+              <div class="tap">
+                <img src="assets/icon/home/notification.svg">
+              </div>
+              <h4>Notification</h4>
+
+            </a>
+          </div>
+        </ion-col>
+
+        <ion-col col-3>
+          <div class="tap-menu">
+            <a>
+              <div class="tap">
+                <img src="assets/icon/home/family-appointments.svg">
+              </div>
+              <h4>Family Appointments</h4>
+            </a>
+          </div>
+        </ion-col>
+
+        <ion-col col-3>
+          <div class="tap-menu">
+            <a (click)="addchild()">
+              <div class="tap">
+                <img src="assets/icon/home/my-family.svg">
+              </div>
+              <h4>My Family</h4>
+            </a>
+          </div>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+
+
 </ion-content>
